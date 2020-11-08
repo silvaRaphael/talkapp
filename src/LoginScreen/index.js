@@ -7,6 +7,7 @@ import {
   View, 
   TextInput, 
   TouchableOpacity,
+  Keyboard
  } from 'react-native';
  
 import { createStackNavigator } from '@react-navigation/stack';
@@ -61,8 +62,10 @@ const Login = ({navigation}) => {
             />
             <TouchableOpacity
               style={styles.button}
-              onPress={ () => navigation.navigate('ChatScreen') }
-            >
+              onPress={ () => {
+                navigation.navigate('ChatScreen')
+                Keyboard.dismiss();
+              }}>
               <Text style={styles.buttonText}>ENTRAR</Text>
             </TouchableOpacity>
           </View>

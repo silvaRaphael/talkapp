@@ -133,7 +133,7 @@ const Chat = (props) => {
                 key={item.id}>
                 <View style={[item.user == 'Suporte' ? styles.messageReceived : styles.messageSended]}>
                   <View style={[item.user == 'Suporte' ? styles.messageReceivedDataView : styles.messageSendedDataView]}>
-                    <Text style={[item.user == 'Suporte' ? styles.messageReceivedData : styles.messageSendedData]}>{item.user+item.id}</Text>
+                    <Text style={[item.user == 'Suporte' ? styles.messageReceivedData : styles.messageSendedData]}>{item.user}</Text>
                     <Text style={[item.user == 'Suporte' ? styles.messageReceivedData : styles.messageSendedData]}>{item.date}</Text>
                   </View>
                   <View>
